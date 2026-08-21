@@ -1,0 +1,92 @@
+package www.cibertec;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JPanel;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class Ejercicio2 {
+
+	private JFrame frmPrograma;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JComboBox comboBox;
+	private JTextField textField;
+	private JButton btnNewButton;
+	private JButton btnNewButton_1;
+	private JScrollPane scrollPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Ejercicio2 window = new Ejercicio2();
+					window.frmPrograma.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Ejercicio2() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmPrograma = new JFrame();
+		frmPrograma.setTitle(" Programa libreria");
+		frmPrograma.setBounds(100, 100, 450, 300);
+		frmPrograma.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmPrograma.getContentPane().setLayout(null);
+		
+		lblNewLabel = new JLabel("Marca");
+		lblNewLabel.setBounds(10, 10, 44, 12);
+		frmPrograma.getContentPane().add(lblNewLabel);
+		
+		lblNewLabel_1 = new JLabel("Cantidad");
+		lblNewLabel_1.setBounds(10, 32, 44, 12);
+		frmPrograma.getContentPane().add(lblNewLabel_1);
+		
+		comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Stanford ", "Alpha", "Justus", "Loro"}));
+		comboBox.setToolTipText("");
+		comboBox.setBounds(64, 6, 95, 20);
+		frmPrograma.getContentPane().add(comboBox);
+		
+		textField = new JTextField();
+		textField.setBounds(64, 29, 95, 18);
+		frmPrograma.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		btnNewButton = new JButton("Proccesar");
+		btnNewButton.setBounds(329, 6, 84, 20);
+		frmPrograma.getContentPane().add(btnNewButton);
+		
+		btnNewButton_1 = new JButton("Borrar");
+		btnNewButton_1.setBounds(329, 28, 84, 20);
+		frmPrograma.getContentPane().add(btnNewButton_1);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 54, 416, 199);
+		frmPrograma.getContentPane().add(scrollPane);
+	}
+}

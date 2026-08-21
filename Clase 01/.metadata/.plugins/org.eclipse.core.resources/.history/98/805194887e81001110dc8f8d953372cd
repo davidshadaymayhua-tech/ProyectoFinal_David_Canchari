@@ -1,0 +1,92 @@
+package www.cibertec;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
+
+public class ejercicio1 {
+
+	private JFrame frmMochila;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JComboBox comboBox;
+	private JTextField textField;
+	private JButton btnNewButton;
+	private JButton btnNewButton_1;
+	private JScrollPane scrollPane;
+	private JTextPane textPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ejercicio1 window = new ejercicio1();
+					window.frmMochila.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public ejercicio1() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmMochila = new JFrame();
+		frmMochila.setTitle("Mochila");
+		frmMochila.setBounds(100, 100, 450, 300);
+		frmMochila.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMochila.getContentPane().setLayout(null);
+		
+		lblNewLabel = new JLabel("Modelo");
+		lblNewLabel.setBounds(10, 10, 44, 12);
+		frmMochila.getContentPane().add(lblNewLabel);
+		
+		lblNewLabel_1 = new JLabel("Cantidad");
+		lblNewLabel_1.setBounds(10, 32, 44, 12);
+		frmMochila.getContentPane().add(lblNewLabel_1);
+		
+		comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Porta", "Adidas", "Nike"}));
+		comboBox.setBounds(103, 6, 96, 20);
+		frmMochila.getContentPane().add(comboBox);
+		
+		textField = new JTextField();
+		textField.setBounds(103, 29, 96, 18);
+		frmMochila.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		btnNewButton = new JButton("Proccesar");
+		btnNewButton.setBounds(231, 6, 84, 20);
+		frmMochila.getContentPane().add(btnNewButton);
+		
+		btnNewButton_1 = new JButton("Borrar");
+		btnNewButton_1.setBounds(231, 28, 84, 20);
+		frmMochila.getContentPane().add(btnNewButton_1);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 57, 416, 196);
+		frmMochila.getContentPane().add(scrollPane);
+		
+		textPane = new JTextPane();
+		scrollPane.setViewportView(textPane);
+	}
+}

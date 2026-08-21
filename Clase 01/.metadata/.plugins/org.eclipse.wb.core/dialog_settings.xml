@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.editor.actions.assistant.LayoutAssistantWindow">
+		<item key="x" value="688"/>
+		<item key="y" value="290"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.CategoryAddDialog">
+		<item key="x" value="524"/>
+		<item key="y" value="254"/>
+		<item key="width" value="560"/>
+		<item key="height" value="409"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item key="x" value="486"/>
+		<item key="y" value="277"/>
+		<item key="width" value="563"/>
+		<item key="height" value="357"/>
+	</section>
+</section>

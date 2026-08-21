@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\SHADAY\Documents\Introduccion Algoritmia\Clase02\.metadata\.plugins\org.eclipse.jdt.core
+2001679281.index
+1865797976.index
+2653722244.index
+2023717660.index
+4719399.index
